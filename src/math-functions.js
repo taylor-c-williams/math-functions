@@ -12,8 +12,8 @@ example and uses the values that were input into the function:
 */
 
 export function sum(a, b) {
-    let solution = [];
-    let sum = a+b;
+    const solution = [];
+    const sum = a + b;
     solution.push(sum);
     solution.push(`The sum of ${a} and ${b} is ${solution}.`);
     return solution;
@@ -32,8 +32,8 @@ the second element is a string that EXACTLY follows this example and uses the va
 */
 
 export function multiply(a, b) {
-    let solution = [];
-    let product = a*b;
+    const solution = [];
+    const product = a * b;
     solution.push(product);
     solution.push(`The product of ${a} and ${b} is ${solution}.`);
     return solution;
@@ -62,7 +62,13 @@ how to do this. However, you may continue to use the + operator for string conca
 */
 
 export function sumAndMultiplyThreeNumbers(a, b, c) { //eslint-disable-line
-
+    const sumArr1 = sum(a, b);
+    const sumArr2 = sum(sumArr1[0], c);
+    const productArr1 = multiply(a, b);
+    const productArr2 = multiply(productArr1[0], c);
+    return [sumArr2[0], productArr2[0], 
+        `${a} and ${b} and ${c} sum to ${sumArr2[0]}.`,
+        `The product of ${a} and ${b} and ${c} is ${productArr2[0]}.`];
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
