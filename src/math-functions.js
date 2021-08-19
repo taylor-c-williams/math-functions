@@ -32,6 +32,11 @@ the second element is a string that EXACTLY follows this example and uses the va
 */
 
 export function multiply(a, b) {
+    let solution = [];
+    let product = a*b;
+    solution.push(product);
+    solution.push(`The product of ${a} and ${b} is ${solution}.`);
+    return solution;
 
 }
 
