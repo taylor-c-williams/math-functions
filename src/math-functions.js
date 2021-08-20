@@ -138,9 +138,8 @@ This function should be dynamic, accepting an array of any length.
 
 export function multiplyAnyArray(dynamicArray) { 
     for (let x = 0; x <= dynamicArray.length; x++){
-       multiply(dynamicArray[x], dynamicArray[x + 1]);
-       
-        }   
+multiply(dynamicArray[x], dynamicArray[x + 1]);
+               }   
 
 }
 
