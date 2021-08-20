@@ -89,9 +89,9 @@ to use the + operator for string concatenation.
 */
 
 export function sumArrayWithThreeNumbers(sumArr) {
-    const newSum1 = sum(2,3);
-    const newSum2 = sum (newSum1[0],4);
-    return [newSum2[0],`2,3,4 was passed in as an array of numbers, and ${newSum2[0]} is their sum.` ];
+    const newSum1 = sum(2, 3);
+    const newSum2 = sum (newSum1[0], 4);
+    return [newSum2[0], `2,3,4 was passed in as an array of numbers, and ${newSum2[0]} is their sum.`];
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
@@ -114,9 +114,9 @@ you may continue to use the + operator for string concatenation.
 */
 
 export function multiplyArrayWithThreeNumbers(multArr) { //eslint-disable-line
-    const newProduct1 = multiply(2,3);
-    const newProduct2 = multiply (newProduct1[0],4);
-    return [newProduct2[0],`The numbers 2,3,4 have a product of ${newProduct2[0]}.`];
+    const newProduct1 = multiply(2, 3);
+    const newProduct2 = multiply (newProduct1[0], 4);
+    return [newProduct2[0], `The numbers 2,3,4 have a product of ${newProduct2[0]}.`];
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
@@ -136,9 +136,12 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 This function should be dynamic, accepting an array of any length.
 */
 
-export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-    for (let x = 1; x <= dynamicArray.length; multiply(dynamicArray));
-   
+export function multiplyAnyArray(dynamicArray) { 
+    for (let x = 0; x <= dynamicArray.length; x++){
+       multiply(dynamicArray[x], dynamicArray[x + 1]);
+       
+        }   
+
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
