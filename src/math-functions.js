@@ -147,13 +147,13 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 This function should be dynamic, accepting an array of any length.
 */
 
-export function multiplyAnyArray(dynamicArray) {
+// export function multiplyAnyArray(dynamicArray) {
 
-    // for(let x = 0; x <= dynamicArray.length; x++) {
-    //     multiply(dynamicArray[x], dynamicArray[x + 1]);
-    //     product = product; 
-    // }
-}
+//     for(let x = 0; x <= dynamicArray.length; x++) {
+//         multiply(dynamicArray[x], dynamicArray[x + 1]);
+//         product = product; 
+//     }
+// }
 
 function multiplyEach(items) {
     var product = 1;
